@@ -212,6 +212,9 @@ span{
 .services{
     height: fit-content;
 }
+.services .btn{
+    margin-top: 2rem;
+}
 
 .services h2{
     margin-bottom: 5rem;
@@ -448,6 +451,27 @@ span{
     #menu-icon {
         display: block;
     }
+    
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1remm 3%;
+        background: var(--bg-color);
+        border-top:.1rem solid rgb(0,0, 0,.2) ;
+        box-shadow:  0 .5rem 1rem  rgb(0,0, 0,.2);
+        display: none;
+    }
+    .navbar.active{
+        display: block;
+    }
+
+    .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 1rem;
+    }
 
     .home{
         flex-direction: column;
@@ -480,6 +504,8 @@ span{
         max-width: 100%;
         margin-top: 4rem;
     }
+
+    
 
     .services h2, 
     .portfolio h2{
